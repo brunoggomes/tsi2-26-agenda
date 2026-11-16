@@ -1,0 +1,13 @@
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+form > div.control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 16px;
+    max-width: 50%;
+}

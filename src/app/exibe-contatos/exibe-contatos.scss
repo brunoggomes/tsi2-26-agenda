@@ -1,0 +1,18 @@
+table { 
+    margin-top: 24px;
+    min-width: 50%;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(33, 3, 97);
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(213, 187, 255);
+}
