@@ -1,7 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { Contato, TipoContato } from '../contato';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ExibeContatos } from '../exibe-contatos/exibe-contatos';
 
 interface OpcoesSelect {
   id: number
@@ -9,7 +8,7 @@ interface OpcoesSelect {
 }
 @Component({
   selector: 'app-adiciona-contato',
-  imports: [ReactiveFormsModule, ExibeContatos],
+  imports: [ReactiveFormsModule],
   providers: [],
   templateUrl: './adiciona-contato.html',
   styleUrl: './adiciona-contato.scss',

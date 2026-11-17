@@ -1,12 +1,13 @@
 <table>
-    @if(contatosAdicionados().length > 0) {
+    @if(agenda.obterTodos().length > 0) {
         <tr>
             <th>Nome</th>
             <th>Telefone</th>
             <th>Tipo</th>
         </tr>
     }
-@for (ct of contatosAdicionados(); track ct.telefone) {
+@for (ct of agenda.obterTodos(); 
+      track ct.telefone) {
     <tr>
         <td>{{ct.nome}}</td>
         <td>{{ct.telefone}}</td>

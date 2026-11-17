@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { AdicionaContato } from './adiciona-contato/adiciona-contato';
+import { AdicionaContato } from './adiciona-contato-usando-service/adiciona-contato';
 
 @Component({
   selector: 'app-root',

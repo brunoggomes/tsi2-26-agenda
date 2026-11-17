@@ -1,5 +1,6 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { Contato } from '../contato';
+import { AgendaService } from '../agenda-service';
 
 
 @Component({
@@ -9,5 +10,5 @@ import { Contato } from '../contato';
   styleUrl: './exibe-contatos.scss',
 })
 export class ExibeContatos {
-   contatosAdicionados = input<Contato[]>([])
+   protected readonly agenda = inject(AgendaService)
 }

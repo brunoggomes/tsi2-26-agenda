@@ -1,0 +1,42 @@
+<section class="conteudo">
+<form [formGroup]="formContato">
+    <div class="control">
+        <label for="tel">Nome</label>
+        <input 
+            type="nome" 
+            name="nome" 
+            id="nome"
+            formControlName="nome">
+    </div>
+    <div class="control">
+        <label for="tel">Telefone</label>
+        <input 
+            type="tel" 
+            name="tel" 
+            id="tel" 
+            formControlName="tel">
+    </div>
+    <div class="control">
+        <label for="Tipo">Tipo</label>
+        <select id="tipo" 
+                formControlName="tipo">
+            @for(tipo of SELECT_TIPO; 
+                 track tipo.id) {
+                <option [id]="tipo.id">
+                    {{tipo.value}}
+                </option>
+            }
+        </select>
+    </div>
+    <div>
+        <input type="button" 
+               value="Adicionar"
+               [disabled]="formContato.invalid"
+               (click)="adicionar()">
+    </div>
+</form>
+
+<app-exibe-contatos>
+</app-exibe-contatos>
+
+</section>
